@@ -62,8 +62,5 @@ public class Get200 {
     }
 }
 
-//    HttpClient client = HttpClients.createDefault();
-//    HttpGet request = new HttpGet(PropertyReader.getProperty("bnmUrl"));
-//    HttpResponse response = client.execute(request);
 
 
