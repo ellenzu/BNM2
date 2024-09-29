@@ -42,3 +42,4 @@ public class ValCurs {
         this.valutes = valutes;
     }
 }
+
