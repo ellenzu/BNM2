@@ -1,36 +1,22 @@
+package github;
+
+import currency.BaseClass;
 import org.apache.http.HttpResponse;
-import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 
 
-public class Get200 {
-
-    CloseableHttpClient client;
-    CloseableHttpResponse response;
+public class Get200 extends BaseClass {
 
     public static String BASE_URL = "http://api.github.com";
     public static String RATE_LIMIT_ENDPOINT = "/rate_limit";
     public static String GISTS_PUBLIC_ENDPOINT = "/gists/public";
-
-    @BeforeMethod
-    public void setup() {
-        client = HttpClientBuilder.create().build();
-    }
-
-    @AfterMethod
-    public void closeResource() throws IOException {
-        client.close();
-        response.close();
-    }
 
     @Test(dataProvider = "endpoint")
     public void firstTest(String endpoint) throws IOException {

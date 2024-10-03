@@ -4,10 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97262d3a-b4bc-49a7-9624-17c8cb81c8e7" name="Changes" comment="Additional task 2">
+    <list default="true" id="97262d3a-b4bc-49a7-9624-17c8cb81c8e7" name="Changes" comment="Additional task 2 + Config properties update">
+      <change afterPath="$PROJECT_DIR$/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/currency/BaseClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/currency/PayloadGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/currency/dto/bnm/PayloadGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/github/CreateDeleteRepoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/github/GitHubUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/github/Repo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/schema" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bookstore/GetBooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bookstore/PostBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bookstore/PostUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/github/Get401.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/github/Get404.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/github/OptionTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/github/TestResponseHeaders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/currency/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/currency/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/currency/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/currency/dto/bnm/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/currency/PropertyReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/currency/PropertyReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/currency/dto/ExchangeRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/currency/dto/bnm/ExchangeRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/currency/dto/ValCurs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/currency/dto/bnm/ValCurs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/currency/dto/Valute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/currency/dto/bnm/Valute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Get200.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/github/Get200.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,11 +39,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Ellen &lt;ellen.imola@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="branch1" />
@@ -29,19 +57,19 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ellenzu"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ellenzu&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="52b6c646-26a1-4a82-9764-5cd9e9d4ff59" />
   </component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/ellenzu/BNM2.git",
-    "accountId": "52b6c646-26a1-4a82-9764-5cd9e9d4ff59"
+    "accountId": "cc470eb3-1a1b-4709-8a1f-a7e1771a63a6"
   },
   "recentNewPullRequestHead": {
     "server": {
@@ -66,14 +94,37 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.OptionTests (1).executor": "Run",
+    "Application.OptionTests.executor": "Run",
     "Application.main.executor": "Run",
     "Application.propertyReader.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG./Users/dan/IdeaProjects/BNM2/testng.xml.executor": "Run",
+    "TestNG.CreateBook.createBook.executor": "Run",
+    "TestNG.CreateDeleteRepoTest.createRepo.executor": "Run",
+    "TestNG.CreateDeleteRepoTest.executor": "Run",
     "TestNG.Get200.executor": "Run",
     "TestNG.Get200.secondTest.executor": "Run",
+    "TestNG.Get401.executor": "Run",
+    "TestNG.Get401.getStatus401.executor": "Run",
+    "TestNG.Get404.executor": "Run",
+    "TestNG.GetBooks.executor": "Run",
+    "TestNG.GetBooks.retrieveBooks.executor": "Run",
+    "TestNG.OptionTests.executor": "Run",
+    "TestNG.OptionTests.optionsTest.executor": "Run",
+    "TestNG.PostBook.createBook.executor": "Run",
+    "TestNG.PostUser.createUser.executor": "Run",
+    "TestNG.PostUser.executor": "Run",
+    "TestNG.RetrieveBooks.executor": "Run",
+    "TestNG.RetrieveBooks.firstTest.executor": "Run",
     "TestNG.SimpleTest.executor": "Run",
+    "TestNG.TestResponseHeaders.executor": "Run",
+    "TestNG.TestResponseHeaders.headerIsPresent.executor": "Run",
+    "TestNG.TestResponseHeaders.headerispresent.executor": "Run",
+    "TestNG.TestResponseHeaders.verifyServerHeader.executor": "Run",
+    "TestNG.TestResponseHeaders.verifyStatusCode.executor": "Run",
     "git-widget-placeholder": "#1 on branch1",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Project",
@@ -82,38 +133,48 @@
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="currency.Main" />
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="currency.dto" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="github" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.CreateDeleteRepoTest">
+    <configuration name="CreateDeleteRepoTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BNM2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="currency.*" />
+          <option name="PATTERN" value="github.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PropertyReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="currency.PropertyReader" />
-      <module name="BNM2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="currency.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Get200" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BNM2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Get200" />
+      <option name="PACKAGE_NAME" value="github" />
+      <option name="MAIN_CLASS_NAME" value="github.CreateDeleteRepoTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateDeleteRepoTest.createRepo" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BNM2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="github.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="github" />
+      <option name="MAIN_CLASS_NAME" value="github.CreateDeleteRepoTest" />
+      <option name="METHOD_NAME" value="createRepo" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -122,8 +183,14 @@
     </configuration>
     <configuration name="Get200.secondTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BNM2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Get200" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="github.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="github" />
+      <option name="MAIN_CLASS_NAME" value="github.Get200" />
       <option name="METHOD_NAME" value="secondTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -132,10 +199,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GetBooks" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BNM2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SimpleTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bookstore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bookstore" />
+      <option name="MAIN_CLASS_NAME" value="bookstore.GetBooks" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -143,13 +216,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/dan/IdeaProjects/BNM2/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BNM2" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.CreateDeleteRepoTest" />
+      <item itemvalue="TestNG.CreateDeleteRepoTest.createRepo" />
+      <item itemvalue="TestNG.Get200.secondTest" />
+      <item itemvalue="TestNG./Users/dan/IdeaProjects/BNM2/testng.xml" />
+      <item itemvalue="TestNG.GetBooks" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="TestNG.Get200" />
+        <item itemvalue="TestNG.CreateDeleteRepoTest" />
         <item itemvalue="TestNG.Get200.secondTest" />
-        <item itemvalue="TestNG.SimpleTest" />
-        <item itemvalue="Application.PropertyReader" />
+        <item itemvalue="TestNG.CreateDeleteRepoTest.createRepo" />
+        <item itemvalue="TestNG.GetBooks" />
+        <item itemvalue="TestNG./Users/dan/IdeaProjects/BNM2/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +278,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727646452156</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Additional task 2 + Config properties update">
+      <option name="closed" value="true" />
+      <created>1727647374921</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727647374921</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Additional task 2 + Config properties update">
+      <option name="closed" value="true" />
+      <created>1727647465334</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727647465334</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,15 +323,54 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New commit" />
     <MESSAGE value="Additional task 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Additional task 2" />
+    <MESSAGE value="Additional task 2 + Config properties update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Additional task 2 + Config properties update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/currency/PropertyReader.java</url>
-          <line>22</line>
+          <line>21</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/currency/dto/bnm/Main.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/currency/dto/bnm/Main.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/github/Get404.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/bookstore/GetBooks.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/bookstore/PostBook.java</url>
+          <line>15</line>
+          <properties class="bookstore.PostBook" method="createBook">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/github/TestResponseHeaders.java</url>
+          <line>19</line>
+          <properties class="github.TestResponseHeaders" method="verifyServerHeader">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
