@@ -1,10 +1,6 @@
 package github;
 
 import currency.BaseClass;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClientBuilder;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -20,9 +16,7 @@ public class Get200 extends BaseClass {
 
     @Test(dataProvider = "endpoint")
     public void firstTest(String endpoint) throws IOException {
-        client = HttpClientBuilder.create().build();
-        HttpGet request = new HttpGet(BASE_URL + endpoint);
-        response = client.execute(request);
+        response = getRequest(BASE_URL + endpoint);
 
         int actualStatusCode = response.getStatusLine().getStatusCode();
         Assert.assertEquals(actualStatusCode, 200);
@@ -30,9 +24,7 @@ public class Get200 extends BaseClass {
 
     @Test
     public void secondTest() throws IOException {
-        CloseableHttpClient client = HttpClientBuilder.create().build();
-        HttpGet request = new HttpGet(BASE_URL + RATE_LIMIT_ENDPOINT);
-        HttpResponse response = client.execute(request);
+        response = getRequest(BASE_URL + RATE_LIMIT_ENDPOINT);
 
         int actualStatusCode = response.getStatusLine().getStatusCode();
         Assert.assertEquals(actualStatusCode, 200);

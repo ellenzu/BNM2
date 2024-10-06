@@ -4,32 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97262d3a-b4bc-49a7-9624-17c8cb81c8e7" name="Changes" comment="Additional task 2 + Config properties update">
-      <change afterPath="$PROJECT_DIR$/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/currency/BaseClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/currency/PayloadGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/currency/dto/bnm/PayloadGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/github/CreateDeleteRepoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/github/GitHubUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/github/Repo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/schema" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/bookstore/GetBooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/bookstore/PostBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/bookstore/PostUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/github/Get401.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/github/Get404.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/github/OptionTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/github/TestResponseHeaders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    <list default="true" id="97262d3a-b4bc-49a7-9624-17c8cb81c8e7" name="Changes" comment="Create Repo + Bookstore Tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/bookstore/dto/BookObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bookstore/dto/Isbn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bookstore/dto/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bookstore/dto/UserID.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/currency/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/currency/dto/bnm/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/currency/PropertyReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/currency/PropertyReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/currency/dto/ExchangeRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/currency/dto/bnm/ExchangeRate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/currency/dto/ValCurs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/currency/dto/bnm/ValCurs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/currency/dto/Valute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/currency/dto/bnm/Valute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Get200.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/github/Get200.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/currency/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/currency/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/currency/dto/bnm/PayloadGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bookstore/GetBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bookstore/GetBooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bookstore/PostBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bookstore/PostBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bookstore/PostUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bookstore/PostUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/github/Get200.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/github/Get200.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/github/OptionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/github/OptionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,22 +55,22 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="52b6c646-26a1-4a82-9764-5cd9e9d4ff59" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ellenzu/BNM2.git",
-    "accountId": "cc470eb3-1a1b-4709-8a1f-a7e1771a63a6"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ellenzu/BNM2.git&quot;,
+    &quot;accountId&quot;: &quot;cc470eb3-1a1b-4709-8a1f-a7e1771a63a6&quot;
   },
-  "recentNewPullRequestHead": {
-    "server": {
-      "useHttp": false,
-      "host": "github.com",
-      "port": null,
-      "suffix": null
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
     },
-    "owner": "ellenzu",
-    "repository": "BNM2"
+    &quot;owner&quot;: &quot;ellenzu&quot;,
+    &quot;repository&quot;: &quot;BNM2&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -106,6 +95,7 @@
     "TestNG.CreateDeleteRepoTest.createRepo.executor": "Run",
     "TestNG.CreateDeleteRepoTest.executor": "Run",
     "TestNG.Get200.executor": "Run",
+    "TestNG.Get200.firstTest.executor": "Run",
     "TestNG.Get200.secondTest.executor": "Run",
     "TestNG.Get401.executor": "Run",
     "TestNG.Get401.getStatus401.executor": "Run",
@@ -115,8 +105,10 @@
     "TestNG.OptionTests.executor": "Run",
     "TestNG.OptionTests.optionsTest.executor": "Run",
     "TestNG.PostBook.createBook.executor": "Run",
+    "TestNG.PostBook.executor": "Run",
     "TestNG.PostUser.createUser.executor": "Run",
     "TestNG.PostUser.executor": "Run",
+    "TestNG.PostUser.verifyUserResponse.executor": "Run",
     "TestNG.RetrieveBooks.executor": "Run",
     "TestNG.RetrieveBooks.firstTest.executor": "Run",
     "TestNG.SimpleTest.executor": "Run",
@@ -125,7 +117,7 @@
     "TestNG.TestResponseHeaders.headerispresent.executor": "Run",
     "TestNG.TestResponseHeaders.verifyServerHeader.executor": "Run",
     "TestNG.TestResponseHeaders.verifyStatusCode.executor": "Run",
-    "git-widget-placeholder": "#1 on branch1",
+    "git-widget-placeholder": "#2 on branch1",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
@@ -142,64 +134,12 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="github" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CreateDeleteRepoTest">
-    <configuration name="CreateDeleteRepoTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BNM2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="github.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="github" />
-      <option name="MAIN_CLASS_NAME" value="github.CreateDeleteRepoTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateDeleteRepoTest.createRepo" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BNM2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="github.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="github" />
-      <option name="MAIN_CLASS_NAME" value="github.CreateDeleteRepoTest" />
-      <option name="METHOD_NAME" value="createRepo" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Get200.secondTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BNM2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="github.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="github" />
-      <option name="MAIN_CLASS_NAME" value="github.Get200" />
-      <option name="METHOD_NAME" value="secondTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GetBooks" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.PostUser">
+    <configuration name="PostBook" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BNM2" />
       <extension name="coverage">
         <pattern>
@@ -208,7 +148,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="bookstore" />
-      <option name="MAIN_CLASS_NAME" value="bookstore.GetBooks" />
+      <option name="MAIN_CLASS_NAME" value="bookstore.PostBook" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -216,20 +156,71 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/dan/IdeaProjects/BNM2/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PostBook.createBook" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BNM2" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="USE_DEFAULT_REPORTERS" value="true" />
-      <option name="PROPERTIES_FILE" value="" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bookstore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bookstore" />
+      <option name="MAIN_CLASS_NAME" value="bookstore.PostBook" />
+      <option name="METHOD_NAME" value="createBook" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BNM2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bookstore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bookstore" />
+      <option name="MAIN_CLASS_NAME" value="bookstore.PostUser" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostUser.createUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BNM2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bookstore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bookstore" />
+      <option name="MAIN_CLASS_NAME" value="bookstore.PostUser" />
+      <option name="METHOD_NAME" value="createUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostUser.verifyUserResponse" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BNM2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bookstore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bookstore" />
+      <option name="MAIN_CLASS_NAME" value="bookstore.PostUser" />
+      <option name="METHOD_NAME" value="verifyUserResponse" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -237,19 +228,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.CreateDeleteRepoTest" />
-      <item itemvalue="TestNG.CreateDeleteRepoTest.createRepo" />
-      <item itemvalue="TestNG.Get200.secondTest" />
-      <item itemvalue="TestNG./Users/dan/IdeaProjects/BNM2/testng.xml" />
-      <item itemvalue="TestNG.GetBooks" />
+      <item itemvalue="TestNG.PostBook" />
+      <item itemvalue="TestNG.PostBook.createBook" />
+      <item itemvalue="TestNG.PostUser" />
+      <item itemvalue="TestNG.PostUser.createUser" />
+      <item itemvalue="TestNG.PostUser.verifyUserResponse" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CreateDeleteRepoTest" />
-        <item itemvalue="TestNG.Get200.secondTest" />
-        <item itemvalue="TestNG.CreateDeleteRepoTest.createRepo" />
-        <item itemvalue="TestNG.GetBooks" />
-        <item itemvalue="TestNG./Users/dan/IdeaProjects/BNM2/testng.xml" />
+        <item itemvalue="TestNG.PostUser" />
+        <item itemvalue="TestNG.PostUser.createUser" />
+        <item itemvalue="TestNG.PostUser.verifyUserResponse" />
+        <item itemvalue="TestNG.PostBook.createBook" />
+        <item itemvalue="TestNG.PostBook" />
       </list>
     </recent_temporary>
   </component>
@@ -294,7 +285,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727647465334</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Create Repo + Bookstore Tests">
+      <option name="closed" value="true" />
+      <created>1727993889785</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727993889785</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -324,7 +323,8 @@
     <MESSAGE value="New commit" />
     <MESSAGE value="Additional task 2" />
     <MESSAGE value="Additional task 2 + Config properties update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Additional task 2 + Config properties update" />
+    <MESSAGE value="Create Repo + Bookstore Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Repo + Bookstore Tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -351,12 +351,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/bookstore/GetBooks.java</url>
-          <line>11</line>
+          <line>9</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/bookstore/PostBook.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/bookstore/PostBook.java</url>
-          <line>15</line>
+          <line>16</line>
           <properties class="bookstore.PostBook" method="createBook">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -371,6 +376,30 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/bookstore/PostUser.java</url>
+          <line>16</line>
+          <properties class="bookstore.PostUser" method="createUser">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/bookstore/PostUser.java</url>
+          <line>34</line>
+          <properties class="bookstore.PostUser" method="verifyUserResponse">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/test/java/github/Get200.java</url>
+          <line>14</line>
+          <properties field="GISTS_PUBLIC_ENDPOINT" class="github.Get200" />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

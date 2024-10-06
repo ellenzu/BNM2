@@ -2,16 +2,15 @@ package github;
 
 import currency.BaseClass;
 import currency.PropertyReader;
-import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpOptions;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClientBuilder;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 
 public class OptionTests extends BaseClass {
+
+
 
     @Test
     public void optionsTest() throws IOException {
@@ -19,9 +18,8 @@ public class OptionTests extends BaseClass {
         String baseUrl = PropertyReader.getProperty("baseUrl");
 
         HttpOptions optionRequest = new HttpOptions(baseUrl);
-        try (CloseableHttpResponse response = client.execute(optionRequest)) {
-            String actualResponse = GitHubUtility.getHeader(response, "Allow");
+        response = client.execute(optionRequest);
+            String actualResponse = GitHubUtility.getHeader(response, "Access-Control-Allow-Methods");
             Assert.assertEquals(actualResponse, expectedResponse, "Expected methods do not match");
         }
-    }
 }

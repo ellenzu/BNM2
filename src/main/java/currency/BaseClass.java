@@ -1,38 +1,35 @@
 package currency;
 
-import com.fasterxml.jackson.core.ObjectCodec;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 import java.io.IOException;
-
-import org.apache.log4j.Logger;
 
 public class BaseClass {
 
     protected static CloseableHttpClient client;
     protected static CloseableHttpResponse response;
 
-    static Logger log = Logger.getLogger(BaseClass.class.getName());
+    protected static final Logger log = Logger.getLogger(BaseClass.class);
 
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
-    @BeforeSuite
+    @BeforeTest
     public void setup() {
         client = HttpClientBuilder.create().build();
     }
 
-    @AfterSuite
+    @AfterTest
     public void cleanUp() throws IOException {
         if (client != null) {
             client.close();
@@ -53,6 +50,14 @@ public class BaseClass {
         postRequest.setEntity(new StringEntity(requestPayload));
 
         return client.execute(postRequest);
+    }
+
+    public static CloseableHttpResponse getRequest(String requestUri) throws IOException {
+        PropertyConfigurator.configure("log4j.properties");
+        log.info("Request URI: " + requestUri);
+
+        HttpGet getRequest = new HttpGet(requestUri);
+        return client.execute(getRequest);
     }
 
     public static String getResponseKeyValue(String responseBody, String responseKey) throws Exception{
