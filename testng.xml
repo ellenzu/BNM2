@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" verbose="1" name="Test Suite" parallel="classes">
+    <test name="Service Tests">
+        <classes>
+            <class name="github.Get404"></class>
+            <class name="github.Get401"></class>
+            <class name="github.Get200"></class>
+            <class name="github.OptionTests"></class>
+            <class name="github.TestResponseHeaders"></class>
+            <class name="bookstore.GetBooks"></class>
+            <class name="bookstore.PostBook"></class>
+            <class name="bookstore.PostUser"></class>
+        </classes>
+    </test>
+</suite>

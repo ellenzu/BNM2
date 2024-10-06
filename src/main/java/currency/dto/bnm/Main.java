@@ -1,6 +1,6 @@
-package currency;
+package currency.dto.bnm;
 
-import currency.dto.ExchangeRate;
+import currency.PropertyReader;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -8,8 +8,6 @@ import java.io.InputStreamReader;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.thoughtworks.xstream.XStream;
-import currency.dto.ValCurs;
-import currency.dto.Valute;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;

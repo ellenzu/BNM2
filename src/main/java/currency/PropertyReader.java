@@ -6,7 +6,6 @@ import java.util.Properties;
 
 public class PropertyReader {
     private static Properties properties = LoadProperties();
-
     private static Properties LoadProperties() {
         Properties properties = new Properties();
 

@@ -1,9 +1,6 @@
-package currency.dto;
+package currency.dto.bnm;
 
-import currency.dto.ValCurs;
-import currency.dto.Valute;
-
-    public class ExchangeRate {
+public class ExchangeRate {
 
         public static String findExchangeRate(ValCurs valCurs, String charCode) {
             for (Valute valute : valCurs.getValutes()) {
