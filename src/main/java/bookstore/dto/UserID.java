@@ -4,27 +4,27 @@ import java.util.List;
 
 public class UserID {
 
-    private String userID;
-    private String username;
-    private List<String> books;
+        private String userID;
+        private String username;
+        private List<String> books;
 
-    public UserID(){
-    }
+        public UserID() {
+        }
 
-    public String getUserID() {
-        return userID;
-    }
+        public String getUserID() {
+            return userID;
+        }
 
-    public void setUserID(String userID) {
-        this.userID = userID;
-    }
+        public void setUserID(String userID) {
+            this.userID = userID;
+        }
 
-    public String getUsername() {
-        return username;
-    }
+        public String getUsername() {
+            return username;
+        }
 
-    public void setUsername(String userName) {
-        this.username = username;
+    public void setUsername(String username) { // Измените параметр на username
+        this.username = username; // Теперь присваиваем параметр полю
     }
 
     public List<String> getBooks() {
@@ -35,3 +35,4 @@ public class UserID {
         this.books = books;
     }
 }
+

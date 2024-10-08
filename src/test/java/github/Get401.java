@@ -1,6 +1,6 @@
 package github;
 
-import currency.BaseClass;
+import utils.BaseClass;
 import org.apache.http.client.methods.HttpGet;
 import org.testng.Assert;
 import org.testng.annotations.*;

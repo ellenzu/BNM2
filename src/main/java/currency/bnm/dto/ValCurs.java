@@ -1,4 +1,4 @@
-package currency.dto.bnm;
+package currency.bnm.dto;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;

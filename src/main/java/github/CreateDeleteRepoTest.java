@@ -1,7 +1,7 @@
 package github;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import currency.BaseClass;
+import utils.BaseClass;
 import currency.PropertyReader;
 import org.apache.http.util.EntityUtils;
 import org.testng.Assert;
