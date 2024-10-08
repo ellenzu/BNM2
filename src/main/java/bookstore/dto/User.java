@@ -1,9 +1,14 @@
 package bookstore.dto;
 
+import currency.PropertyReader;
+
 public class User {
 
-    private String userName;
-    private String password;
+    private String userName = "";
+    private String  password = "";
+
+    public static String USERNAME = PropertyReader.getProperty("userName");
+    public static String PASSWORD = PropertyReader.getProperty("password");
 
     public String getUserName() {
         return userName;

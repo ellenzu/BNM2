@@ -1,6 +1,6 @@
 package bookstore;
 
-import currency.BaseClass;
+import utils.BaseClass;
 import currency.PropertyReader;
 import org.testng.Assert;
 import org.testng.annotations.Test;

@@ -1,16 +1,13 @@
 package github;
 
-import currency.BaseClass;
 import currency.PropertyReader;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClients;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.Test;
+import utils.BaseClass;
 
 import java.io.IOException;
-import java.util.Properties;
 
 
 public class TestResponseHeaders extends BaseClass {

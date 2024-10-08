@@ -1,4 +1,4 @@
-package currency.dto.bnm;
+package currency.bnm.dto;
 
 public class ExchangeRate {
 

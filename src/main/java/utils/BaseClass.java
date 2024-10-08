@@ -1,8 +1,9 @@
-package currency;
+package utils;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -21,8 +22,8 @@ public class BaseClass {
     protected static CloseableHttpResponse response;
 
     protected static final Logger log = Logger.getLogger(BaseClass.class);
-
     private static final ObjectMapper objectMapper = new ObjectMapper();
+
 
     @BeforeTest
     public void setup() {
@@ -39,18 +40,6 @@ public class BaseClass {
         }
     }
 
-    public static CloseableHttpResponse postRequest(String requestUri, String requestPayload, String token) throws Exception {
-        PropertyConfigurator.configure("log4j.properties");
-        log.info("Request URI: " + requestUri);
-        log.info("Request Payload: " + requestPayload);
-
-        HttpPost postRequest = new HttpPost(requestUri);
-        postRequest.setHeader("Content-Type", "application/json");
-        postRequest.setHeader("Authorization", "Bearer " + token);
-        postRequest.setEntity(new StringEntity(requestPayload));
-
-        return client.execute(postRequest);
-    }
 
     public static CloseableHttpResponse getRequest(String requestUri) throws IOException {
         PropertyConfigurator.configure("log4j.properties");
@@ -65,4 +54,43 @@ public class BaseClass {
         JsonNode keyNode = rootNode.path(responseKey);
         return keyNode.asText();
     }
+
+    public static CloseableHttpResponse postRequest(String requestUri, String requestPayload, String token) throws Exception {
+        PropertyConfigurator.configure("log4j.properties");
+        log.info("Request URI: " + requestUri);
+        log.info("Request Payload: " + requestPayload);
+
+        HttpPost postRequest = new HttpPost(requestUri);
+        postRequest.setHeader("Content-Type", "application/json");
+        postRequest.setHeader("Authorization", "Bearer " + token);
+        postRequest.setEntity(new StringEntity(requestPayload));
+
+        return client.execute(postRequest);
+    }
+
+    public static CloseableHttpResponse postRequest(String requestUri, String requestPayload) throws Exception {
+        PropertyConfigurator.configure("log4j.properties");
+        log.info("Request URI: " + requestUri);
+        log.info("Request Payload: " + requestPayload);
+
+        HttpPost postRequest = new HttpPost(requestUri);
+        postRequest.setHeader("Content-Type", "application/json");
+        postRequest.setEntity(new StringEntity(requestPayload));
+
+        return client.execute(postRequest);
+    }
+
+public static CloseableHttpResponse deleteRequest(String requestUri, String token) throws Exception{
+    PropertyConfigurator.configure("log4j.properties");
+    log.info("Request URI: " + requestUri);
+
+    HttpDelete deleteRequest = new HttpDelete(requestUri);
+    if (token != null) {
+        deleteRequest.setHeader("Authorization", "Bearer " + token);
+    } else {
+        log.warn("Token is not set.");
+    }
+
+    return client.execute(deleteRequest);
+}
 }
